@@ -1,0 +1,108 @@
+@import "tailwindcss";
+
+/* ═══ Base overrides ═══ */
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  @apply bg-slate-950 text-slate-100 antialiased;
+  font-family: system-ui, -apple-system, sans-serif;
+}
+
+/* ═══ 3-D card flip support ═══ */
+
+.perspective-1000 {
+  perspective: 1000px;
+}
+
+.backface-hidden {
+  backface-visibility: hidden;
+}
+
+.preserve-3d {
+  transform-style: preserve-3d;
+}
+
+/* ═══ Print styles ═══ */
+
+@media print {
+  .no-print {
+    display: none !important;
+  }
+
+  html, body {
+    background: white !important;
+    color: black !important;
+    font-size: 11pt;
+  }
+
+  * {
+    print-color-adjust: exact;
+    -webkit-print-color-adjust: exact;
+  }
+
+  .page-break {
+    break-before: page;
+  }
+
+  /* Force all text visible for print */
+  .print-report {
+    background: white !important;
+  }
+
+  .print-report * {
+    animation: none !important;
+    transition: none !important;
+    opacity: 1 !important;
+    transform: none !important;
+  }
+
+  /* Table formatting */
+  table {
+    border-collapse: collapse;
+    width: 100%;
+  }
+
+  th, td {
+    padding: 4px 8px;
+    border-bottom: 1px solid #e5e7eb;
+  }
+
+  th {
+    font-weight: 600;
+  }
+
+  /* Bars / progress fill — keep colors */
+  [class*="bg-red-"],
+  [class*="bg-orange-"],
+  [class*="bg-amber-"],
+  [class*="bg-sky-"],
+  [class*="bg-emerald-"],
+  [class*="bg-green-"],
+  [class*="bg-blue-"],
+  [class*="bg-purple-"],
+  [class*="bg-indigo-"] {
+    print-color-adjust: exact;
+    -webkit-print-color-adjust: exact;
+  }
+
+  /* Card containers */
+  .rounded-xl {
+    border: 1px solid #d1d5db !important;
+    border-radius: 8px;
+    padding: 12px;
+    margin-bottom: 8px;
+  }
+
+  /* Avoid orphans in timeline */
+  .space-y-4 > div {
+    break-inside: avoid;
+  }
+
+  /* Hide motion/animation artifacts */
+  [style*="opacity: 0"] {
+    opacity: 1 !important;
+  }
+}
