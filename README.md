@@ -18,17 +18,6 @@ npm run build
 npm run preview   # serve o build de produção localmente
 ```
 
-O bundle de produção é gerado em `dist/`. Faça deploy em qualquer hosting estático (Vercel, Netlify, GitHub Pages, etc.).
-
-## Modo Demo / Professor
-
-Clique em **Modo Demo (Professor)** no ecrã inicial para executar uma sessão de jogo totalmente automatizada e determinística:
-
-- RNG com semente garante que cada demo produz cartas e dados idênticos.
-- Escolhas do prólogo e auditoria VRIO são preenchidas automaticamente.
-- Cada ronda avança automaticamente por viragens de cartas, dados, interpretações, seleção de ações e resolução.
-- Útil para demonstrações em sala de aula e testes.
-
 ## Como Jogar
 
 1. **Prólogo** — Responda a 3 questões de cenário que moldam as suas métricas iniciais. Escolha a duração: Rápido (2), Regular (4) ou Longo (6 rondas).
