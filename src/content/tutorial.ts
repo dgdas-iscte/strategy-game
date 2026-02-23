@@ -72,7 +72,7 @@ export const RULES_SECTIONS: RulesSection[] = [
   {
     id: 'how-to-win',
     title: 'Como Vencer',
-    body: 'Avance a sua posição no tabuleiro ao longo das rondas (2, 4 ou 6). Cada ronda: tire cartas PESTEL + Porter, ative um recurso VRIO, escolha uma ação estratégica e justifique-a. Estratégias coerentes ganham movimento bónus. Posição no tabuleiro 0–13. Classificação: ≥75% do máximo = Excelente, ≥50% = Bom, <50% = Arriscado.',
+    body: 'Avance a sua posição no tabuleiro ao longo das rondas (2, 4 ou 6). Cada ronda: tire cartas PESTEL + Porter, ative um recurso VRIO, escolha uma ação estratégica e justifique-a. Estratégias coerentes ganham movimento bónus. A posição máxima do tabuleiro depende da duração escolhida (5 em 2 rondas, 9 em 4, 13 em 6). Classificação: ≥75% do máximo = Excelente, ≥50% = Bom, <50% = Arriscado.',
   },
   {
     id: 'pestel',

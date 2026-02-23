@@ -2,14 +2,29 @@
 
 ## Visão Geral
 
-Arena Estratégica é uma simulação estratégica para um jogador onde assume o papel de Diretor de Estratégia da NexaCorp. Ao longo de **6 rondas**, diagnostica o ambiente externo usando **PESTEL** e as **Cinco Forças de Porter**, alavanca forças internas através de recursos **VRIO**, e toma decisões estratégicas. O seu objetivo é avançar a posição no tabuleiro através de bom desempenho e estratégia coerente.
+Arena Estratégica é uma simulação estratégica para um jogador onde assume o papel de membro do conselho de administração da NexaCorp. Ao longo de **2, 4 ou 6 rondas** (conforme a duração escolhida), diagnostica o ambiente externo usando **PESTEL** e as **Cinco Forças de Porter**, alavanca forças internas através de recursos **VRIO**, e toma decisões estratégicas.
+
+---
+
+## Objetivo
+
+O objetivo do jogo é levar a NexaCorp ao sucesso, avançando o máximo possível no tabuleiro. Para isso, deve:
+
+- **Diagnosticar** corretamente o ambiente externo (PESTEL + Porter) em cada ronda
+- **Ativar** o recurso VRIO interno mais adequado ao contexto
+- **Escolher** a ação estratégica que melhor responde ao cenário
+- **Justificar** cada decisão de forma coerente — ligando análise externa, recurso interno e ação
+
+Em cada ronda, são tiradas cartas que simulam eventos do mundo real — mudanças políticas, económicas, sociais, tecnológicas, ecológicas e legais (PESTEL), bem como alterações na pressão competitiva (Cinco Forças de Porter). Estes eventos representam oportunidades e ameaças que afetam a gestão da empresa, e cabe ao jogador interpretá-los e reagir com as decisões estratégicas mais adequadas.
+
+Quanto mais coerentes forem as suas decisões, mais avança no tabuleiro. No final, a sua posição determina a classificação: **Excelente** (≥75% do máximo), **Bom** (≥50%) ou **Arriscado** (<50%).
 
 ---
 
 ## Fluxo do Jogo
 
 ```
-Início → Prólogo (3 cenas) → Auditoria VRIO → 6 Rondas → Sala de Decisão Final → Relatório
+Início → Auditoria VRIO → 2/4/6 Rondas → Sala de Decisão Final → Relatório
 ```
 
 ### 1. Prólogo
@@ -43,8 +58,6 @@ Os resultados VRIO determinam a sua posição competitiva:
 | V + R + I | Vantagem Inexplorada |
 | V + R + I + O | Vantagem Competitiva Sustentada |
 
-**Importante:** A flag **O** é crítica. Sem ela, ações grandes arriscam falha de execução, e tokens de resiliência não podem ser gerados.
-
 ### 3. Rondas (×6)
 
 Cada ronda segue uma sequência fixa de seis sub-fases:
@@ -53,7 +66,7 @@ Cada ronda segue uma sequência fixa de seis sub-fases:
 
 Uma carta é tirada do baralho PESTEL representando um evento macro-ambiental. O PESTEL diagnostica o ambiente contextual mais amplo através de seis categorias:
 
-- **P** — Político: política governamental, regulação, estabilidade política
+- **P** — Político: política governamental, estabilidade política
 - **E** — Económico: crescimento do PIB, inflação, taxas de juro, confiança do consumidor
 - **S** — Social: demografia, mudanças no estilo de vida, mudanças de valores
 - **T** — Tecnológico: inovação, automação, ciclos de I&D
@@ -167,24 +180,23 @@ Os recursos VRIO geram dois tipos de tokens:
 
 ## Tabuleiro e Movimento
 
-O tabuleiro é uma pista linear da posição **0 a 13**. Movimento por ronda:
+O tabuleiro é uma pista serpentina cuja posição máxima depende da duração do jogo escolhida: **1 + 2 × número de rondas** (posição 0 a 5 em 2 rondas, 0 a 9 em 4 rondas, 0 a 13 em 6 rondas). Movimento por ronda:
 
 | Componente | Valor |
 |-----------|-------|
 | Movimento base | +1 |
-| Bónus de coerência (se pontuação ≥ 2) | +1 |
+| Bónus de coerência (se coerência ≥ 2) | +1 |
 | Recuos de armadilhas não mitigadas | −1 cada |
 
 **Melhor caso:** +2 por ronda. **Pior caso:** −2 por ronda.
 
-Classificação final baseada na posição do tabuleiro após a ronda 6:
+Classificação final baseada na posição como percentagem do máximo atingível:
 
-| Posição | Classificação |
-|---------|--------------|
-| 11–13 | Excelente |
-| 7–10 | Bom |
-| 4–6 | Médio |
-| 0–3 | Fraco |
+| Percentagem | Classificação |
+|-------------|--------------|
+| ≥ 75% | Excelente |
+| ≥ 50% | Bom |
+| < 50% | Arriscado |
 
 ---
 
@@ -237,18 +249,7 @@ Use **Ctrl+P / Cmd+P** e selecione "Guardar como PDF" para exportar o relatório
 
 ---
 
-## Modo Demo / Professor
-
-Clique em **Modo Demo (Professor)** no ecrã inicial para uma sessão totalmente automatizada e determinística:
-
-- RNG com semente produz cartas e dados idênticos sempre
-- Prólogo e auditoria VRIO são preenchidos automaticamente
-- Cada ronda avança automaticamente por todas as fases
-- Útil para demonstrações em sala de aula e testes
-
----
-
-## Referência dos Frameworks Estratégicos
+## Referência dos Frameworks Estratégicos de Análise Externa e Interna Utilizados
 
 ### PESTEL
 
