@@ -146,7 +146,7 @@ export default function HomeScreen() {
         animate={{ opacity: 1 }}
         transition={{ delay: 1 }}
       >
-        Aula de Estratégia Executiva — Jogo Offline Single-Page
+        Jogo de Análise Estratégica — UC Estratégia Executiva do Mestrado em Gestão Aplicada no ISCTE-IUL Executive Education
       </motion.p>
 
       {/* Reset confirmation dialog */}

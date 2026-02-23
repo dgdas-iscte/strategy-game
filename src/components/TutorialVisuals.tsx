@@ -69,7 +69,7 @@ function PestelVisual() {
 function PorterVisual() {
   const forces = [
     { label: 'Rivalidade', level: 3 },
-    { label: 'Entrantes', level: 2 },
+    { label: 'N. Concorrentes', level: 2 },
     { label: 'Substitutos', level: 4 },
     { label: 'Compradores', level: 2 },
     { label: 'Fornecedores', level: 5 },
