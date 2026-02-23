@@ -195,7 +195,7 @@ function PestelDrawPhase() {
   const handleDice = (value: number) => {
     setTimeout(() => {
       dispatch({ type: 'DRAW_PESTEL', intensity: value });
-    }, 800);
+    }, 1000);
   };
 
   return (
@@ -249,7 +249,7 @@ function PestelInterpretPhase() {
     if (confirmed && interp && metric) {
       const timer = setTimeout(() => {
         dispatch({ type: 'INTERPRET_PESTEL', interpretation: interp, metric });
-      }, 1800);
+      }, 2200);
       return () => clearTimeout(timer);
     }
   }, [confirmed, interp, metric, dispatch]);
@@ -369,7 +369,7 @@ function PorterDrawPhase() {
   const handleDice = (value: number) => {
     setTimeout(() => {
       dispatch({ type: 'DRAW_PORTER', intensity: value });
-    }, 800);
+    }, 1000);
   };
 
   return (
@@ -507,7 +507,7 @@ function ActionChoosePhase() {
           action: sel,
           justifications: { pestel: jP, porter: jF, vrio: jV },
         });
-      }, 2000);
+      }, 2500);
       return () => clearTimeout(timer);
     }
   }, [actionConfirmed, sel, jP, jF, jV, dispatch]);
@@ -800,7 +800,7 @@ function ResolvePhase() {
   useEffect(() => {
     if (!isReady) return;
     if (step < 5) {
-      const timer = setTimeout(() => setStep((s) => s + 1), 1200);
+      const timer = setTimeout(() => setStep((s) => s + 1), 1500);
       return () => clearTimeout(timer);
     }
   }, [isReady, step]);
