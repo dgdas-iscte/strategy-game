@@ -369,7 +369,7 @@ function PorterDrawPhase() {
   const handleDice = (value: number) => {
     setTimeout(() => {
       dispatch({ type: 'DRAW_PORTER', intensity: value });
-    }, 1000);
+    }, 1800);
   };
 
   return (
