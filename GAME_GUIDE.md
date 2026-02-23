@@ -21,6 +21,28 @@ Quanto mais coerentes forem as suas decisões, mais avança no tabuleiro. No fin
 
 ---
 
+## Referência dos Frameworks Estratégicos de Análise Externa e Interna Utilizados
+
+### PESTEL
+
+O PESTEL é uma ferramenta de diagnóstico estratégico para o **ambiente contextual/macro**. Os seis contextos não são independentes — existem frequentemente relações cruzadas entre tendências. Alguns fatores são controláveis, outros não. O ambiente externo muda continuamente.
+
+### Cinco Forças de Porter
+
+As Cinco Forças de Porter analisam o **ambiente da indústria/competitivo**. Níveis de força mais altos significam mais pressão competitiva e menor atratividade da indústria:
+
+- **Rivalidade** — Mais rivais ou concorrência agressiva comprime as margens
+- **Novos Concorrentes** — Barreiras mais baixas convidam nova concorrência
+- **Substitutos** — Melhores alternativas erosionam a diferenciação
+- **Compradores** — Compradores consolidados ou sensíveis ao preço reduzem o poder de fixação de preços
+- **Fornecedores** — Fornecedores concentrados ou escassos aumentam os custos dos inputs
+
+### VRIO
+
+O VRIO é uma metodologia da Visão Baseada em Recursos (RBV) para avaliar se os recursos/capacidades internos conseguem sustentar vantagem competitiva. As quatro questões constroem-se sequencialmente — um recurso deve passar cada teste para alcançar vantagem sustentada. A dimensão **Organizado** é particularmente importante: mesmo um recurso valioso, raro e inimitável falha em entregar resultados se a organização não tiver a estrutura e processos para o explorar.
+
+---
+
 ## Fluxo do Jogo
 
 ```
@@ -246,25 +268,3 @@ Um relatório abrangente de análise estratégica é gerado com:
 - **Cronologia das Rondas** — Deltas de métricas, pontuações de coerência, armadilhas e movimento por ronda
 
 Use **Ctrl+P / Cmd+P** e selecione "Guardar como PDF" para exportar o relatório.
-
----
-
-## Referência dos Frameworks Estratégicos de Análise Externa e Interna Utilizados
-
-### PESTEL
-
-O PESTEL é uma ferramenta de diagnóstico estratégico para o **ambiente contextual/macro**. Os seis contextos não são independentes — existem frequentemente relações cruzadas entre tendências. Alguns fatores são controláveis, outros não. O ambiente externo muda continuamente.
-
-### Cinco Forças de Porter
-
-As Cinco Forças de Porter analisam o **ambiente da indústria/competitivo**. Níveis de força mais altos significam mais pressão competitiva e menor atratividade da indústria:
-
-- **Rivalidade** — Mais rivais ou concorrência agressiva comprime as margens
-- **Novos Concorrentes** — Barreiras mais baixas convidam nova concorrência
-- **Substitutos** — Melhores alternativas erosionam a diferenciação
-- **Compradores** — Compradores consolidados ou sensíveis ao preço reduzem o poder de fixação de preços
-- **Fornecedores** — Fornecedores concentrados ou escassos aumentam os custos dos inputs
-
-### VRIO
-
-O VRIO é uma metodologia da Visão Baseada em Recursos (RBV) para avaliar se os recursos/capacidades internos conseguem sustentar vantagem competitiva. As quatro questões constroem-se sequencialmente — um recurso deve passar cada teste para alcançar vantagem sustentada. A dimensão **Organizado** é particularmente importante: mesmo um recurso valioso, raro e inimitável falha em entregar resultados se a organização não tiver a estrutura e processos para o explorar.
